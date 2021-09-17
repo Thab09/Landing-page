@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.header-and-hero {
+.wrapper-inside {
   max-width: 1440px;
 }
 
@@ -35,16 +35,17 @@ header {
 nav > a {
   text-decoration: none;
   font-size: 18px;
-  color: rgb(92, 92, 92);
+  color: rgb(56, 56, 56);
   margin-left: 35px;
 }
 
 /********** hero section **********/
 
-.hero {
+#hero {
   display: flex;
   justify-content: space-between;
-  margin: 75px 0px;
+  flex-wrap: wrap;
+  margin: 75px 0px 20px 0px;
   gap: 8rem;
 }
 
@@ -66,16 +67,129 @@ nav > a {
 .hero-text > h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
-  font-weight: 800;
+  font-weight: 700;
+  color: rgb(26, 26, 26);
 }
 
 .hero-text > p {
   font-size: 18px;
-  margin: 8px 0px;
+  line-height: 28px;
+  color: rgb(39, 39, 39);
+  margin: 15px 0px;
+}
+
+.hero-btn,
+.contact-btn > button {
+  height: 40px;
+  padding: 2px 10px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #0391b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/********** gallery section **********/
+
+#gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 75px 0px;
+}
+
+#gallery > h2 {
+  font-size: 36px;
+  font-weight: 500;
+  font-family: "Lora", serif;
+  margin-bottom: 50px;
+  color: rgb(26, 26, 26);
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 72px;
+  flex-wrap: wrap;
+}
+
+.gallery-box {
+  width: 180px;
+  text-align: center;
+}
+
+.gallery-box > p {
+  font-family: "Lora", serif;
+  font-size: 14px;
+  color: rgb(39, 39, 39);
+  padding-top: 5px;
 }
 
 .gallery-box > img {
-  width: 170px;
-  height: 170px;
+  width: 180px;
+  height: 180px;
   border-radius: 7px;
+}
+
+/********** quote section **********/
+
+#quote-box {
+  padding: 75px 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+
+.quote {
+  width: 900px;
+  color: rgb(39, 39, 39);
+  font-size: 32px;
+}
+
+.quote-reference {
+  align-self: flex-end;
+  font-weight: bold;
+  font-family: "Lora", sans-serif;
+  color: rgb(26, 26, 26);
+  font-size: 22px;
+}
+
+/********** contact section **********/
+
+#contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 32px;
+  width: 800px;
+  padding: 30px 0px;
+  background-color: rgb(255, 255, 255);
+  border: solid 4px #0391b4;
+  border-radius: 7px;
+  margin: 100px auto;
+}
+
+.visit-maldives p:first-child {
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(26, 26, 26);
+}
+.visit-maldives p:last-child {
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+/********** footer section **********/
+
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #0391b4;
+  color: white;
+  font-size: 18px;
+  text-align: center;
 }
